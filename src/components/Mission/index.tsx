@@ -10,7 +10,7 @@ const MissionSection = () => {
           <div className="relative">
             <img
               className="w-full h-auto bg-contain bg-center bg-no-repeat"
-              src="/src/assets/images/background.png"
+              src="/images/background.png"
               alt="Background"
             />
             
@@ -20,7 +20,7 @@ const MissionSection = () => {
                 <span className="mr-2 font-medium">PostNutDAO</span>
                 <div className="absolute  bottom-3 right-0 rounded-full overflow-hidden  bg-slate-50">
                   <img
-                    src="/src/assets/images/peunut.png"
+                    src="/images/peunut.png"
                     alt="PostNutDAO Logo"
                     className="w-full h-full object-cover"
                   />
@@ -42,7 +42,7 @@ const MissionSection = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="relative mb-8 md:mb-0 md:w-1/2">
               <img
-                src="/src/assets/images/video.png"
+                src="/images/video.png"
                 alt="Educational elements"
                 className="relative z-10 max-w-md w-full h-auto"
               />
@@ -52,7 +52,7 @@ const MissionSection = () => {
                 <span className="mr-2">PostNutDAO DAPP</span>
                 <div className="absolute  bottom-3 right-0 rounded-full overflow-hidden ">
                   <img
-                    src="/src/assets/images/peunut.png"
+                    src="/images/peunut.png"
                     alt="PostNutDAO Logo"
                     className="w-full h-full object-cover"
                   />
@@ -74,7 +74,7 @@ const MissionSection = () => {
                 Launched on
               </span>
               <img
-                src="/src/assets/images/logo.png"
+                src="/images/logo.png"
                 alt="PacaPump"
                 className="w-8 h-8 rounded-full"
               />
@@ -88,7 +88,7 @@ const MissionSection = () => {
                 KongSwap
               </span>
               <img
-                src="/src/assets/images/giant.png"
+                src="/images/giant.png"
                 alt="KongSwap"
                 className="w-8 h-8 rounded-full"
               />
@@ -102,7 +102,7 @@ const MissionSection = () => {
             <div className="flex items-center gap-2 mb-4">
               <span className="text-3xl font-bold">Trade</span>
               <img
-                src="/src/assets/images/peunut.png"
+                src="/images/peunut.png"
                 alt="Token"
                 className="w-8 h-8"
               />
@@ -139,21 +139,21 @@ const MissionSection = () => {
           <div className="flex justify-center gap-4 mb-8">
             <button className="bg-blue-500 p-3 rounded-full hover:bg-blue-600 transition-colors">
               <img
-                src="/src/assets/images/Telegram_logo.webp"
+                src="/images/Telegram_logo.webp"
                 alt="Telegram"
                 className="w-6 h-6"
               />
             </button>
             <button className="bg-purple-600 p-3 rounded-full hover:bg-purple-700 transition-colors">
               <img
-                src="/src/assets/images/discord.png"
+                src="/images/discord.png"
                 alt="Discord"
                 className="w-6 h-6"
               />
             </button>
             <button className="bg-sky-500 p-3 rounded-full hover:bg-sky-600 transition-colors">
               <img
-                src="/src/assets/images/twitter.webp"
+                src="/images/twitter.webp"
                 alt="Twitter"
                 className="w-6 h-6"
               />
@@ -164,7 +164,7 @@ const MissionSection = () => {
           {/* Character illustration */}
           <div className="absolute bottom-0 right-0 hidden sm:block">
             <img
-              src="/src/assets/images/bigpeaunut.png"
+              src="/images/bigpeaunut.png"
               alt="Character with peanut"
               className="w-64 h-auto"
             />

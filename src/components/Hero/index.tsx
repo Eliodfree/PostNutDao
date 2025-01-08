@@ -7,7 +7,7 @@ const HeroSection = () => {
           <span className="text-sm md:text-base font-medium flex items-center">
             The
             <img
-              src="/src/assets/images/peunut.png"
+              src="/images/peunut.png"
               alt="token"
               className="rounded-full ml-2"
             />
@@ -31,7 +31,7 @@ const HeroSection = () => {
               <span className="mr-2 text-sm md:text-base">PostNutDAO</span>
               <div className="absolute  bottom-3 right-0 bg-green-50 rounded-full">
                 <img
-                src="/src/assets/images/peunut.png"
+                src="/images/peunut.png"
                 alt="dao"
                 className="rounded-full"
               /></div>
@@ -71,7 +71,7 @@ const HeroSection = () => {
           {/* Right Image */}
           <div className="hidden md:block">
             <img
-              src="/src/assets/images/hero.png"
+              src="/images/hero.png"
               alt="Hero illustration"
               className="relative z-10 max-w-md"
             />
@@ -80,7 +80,7 @@ const HeroSection = () => {
           {/* Mobile Image */}
           <div className="md:hidden mt-8">
             <img
-              src="/src/assets/images/hero.png"
+              src="/images/hero.png"
               alt="Hero illustration"
               className="w-full max-w-sm mx-auto"
             />
