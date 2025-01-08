@@ -2,7 +2,7 @@
 const HeroSection = () => {
   return (
     <div className="bg-cyan-400 min-h-screen relative overflow-hidden">
-      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[76%] md:w-[76%] flex justify-between items-center bg-white rounded-full px-6 py-2 shadow-lg sm:mb-16">
+      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[76%] md:w-[76%] flex justify-between items-center bg-white rounded-full px-6 py-2 shadow-lg  ">
         <div className="flex items-center space-x-2">
           <span className="text-sm md:text-base font-medium flex items-center">
             The
@@ -16,12 +16,12 @@ const HeroSection = () => {
             SNUT token is live on KongSwap!
           </span>
         </div>
-        <button className="bg-gray-900 text-white px-6 py-2 rounded-full text-sm md:text-base hover:bg-gray-800">
+        <button className="bg-gray-900 text-white px-5 py-2 rounded-full text-sm md:text-base hover:bg-gray-800">
           Buy Now
         </button>
       </div>
 
-      <div className="container mx-auto px- pt-32 md:pt-36  flex items-center justify-center w-[76%] md:w-[76%] sm:mt-8
+      <div className="container mx-auto px- pt-32 md:pt-36  flex items-center justify-center w-[76%] md:w-[76%] mt-16
       ">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between  w-full md:w-full ">
 
@@ -51,6 +51,7 @@ const HeroSection = () => {
             {/* CTA Button */}
             <button className="bg-orange-200 text-gray-800 px-6 py-3 rounded-full inline-flex items-center shadow-lg hover:bg-orange-300">
               Buy Now
+              <div></div>
               <svg
                 className="w-5 h-5 ml-2"
                 fill="none"

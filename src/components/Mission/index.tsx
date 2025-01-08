@@ -4,9 +4,9 @@ const MissionSection = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
       <div className="max-w-6xl mx-auto px-4 py-8 md:py-1">
-        {/* Mission Section with Background */}
+ 
         <div className="relative max-w-3xl mx-auto text-center mb-16">
-          {/* Background Image */}
+        
           <div className="relative">
             <img
               className="w-full h-auto bg-contain bg-center bg-no-repeat"
@@ -16,9 +16,9 @@ const MissionSection = () => {
             
             {/* Content overlaying the bottom half of the image */}
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-cyan-50  to-transparent pt-34 pb-8">
-              <div className="inline-flex items-center bg-[#1a1a1a] text-white rounded-lg px-4 py-2 mb-6">
+              <div className="relative  inline-flex items-center bg-[#1a1a1a] text-white rounded-lg px-8 py-2 mb-6">
                 <span className="mr-2 font-medium">PostNutDAO</span>
-                <div className="w-6 h-6 rounded-full overflow-hidden">
+                <div className="absolute  bottom-3 right-0 rounded-full overflow-hidden  bg-slate-50">
                   <img
                     src="/src/assets/images/peunut.png"
                     alt="PostNutDAO Logo"
@@ -37,7 +37,7 @@ const MissionSection = () => {
         </div>
 
 
-        {/* Educational Dapp Card - Updated to match new design */}
+
         <div className="max-w-4xl mx-auto bg-[#FFC16D] rounded-2xl p-8 mb-16">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="relative mb-8 md:mb-0 md:w-1/2">
@@ -48,13 +48,15 @@ const MissionSection = () => {
               />
             </div>
             <div className="md:w-1/2">
-              <div className="inline-flex items-center bg-white rounded-lg px-4 py-2 mb-4">
+              <div className=" relative inline-flex items-center bg-white rounded-lg px-8 py-2 mb-4">
                 <span className="mr-2">PostNutDAO DAPP</span>
-                <img
-                  src="/src/assets/images/peunut.png"
-                  alt="PostNutDAO Logo"
-                  className="w-6 h-6 rounded-full"
-                />
+                <div className="absolute  bottom-3 right-0 rounded-full overflow-hidden ">
+                  <img
+                    src="/src/assets/images/peunut.png"
+                    alt="PostNutDAO Logo"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
               <p className="text-xl text-gray-800">
                 The team is working on a educational dapp that will educate
@@ -64,7 +66,7 @@ const MissionSection = () => {
           </div>
         </div>
 
-        {/* Launch Info - Updated with new design */}
+     
         <div className="flex items-center justify-center  max-w-4xl mx-auto bg-black text-white rounded-2xl p-8 mb-16  h-[175px]">
           <div className="flex flex-col space-y-4">
             <div className="flex items-center justify-center gap-3">
@@ -94,7 +96,7 @@ const MissionSection = () => {
           </div>
         </div>
 
-        {/* Trade Section - Updated with new design */}
+       
         <div className="max-w-4xl mx-auto bg-cyan-100 rounded-2xl p-8 mb-5 relative">
           <div className="flex flex-col items-center text-center relative z-10">
             <div className="flex items-center gap-2 mb-4">
@@ -126,7 +128,7 @@ const MissionSection = () => {
           </div>
         </div>
 
-        {/* Community Section - Updated with centered text and image */}
+      
         <div className="flex items-center justify-evenly max-w-4xl mx-auto text-center relative  ">
           <div>
           <h3 className="text-4xl mb-4">
@@ -137,7 +139,7 @@ const MissionSection = () => {
           <div className="flex justify-center gap-4 mb-8">
             <button className="bg-blue-500 p-3 rounded-full hover:bg-blue-600 transition-colors">
               <img
-                src="/src/assets/images/telegram.png"
+                src="/src/assets/images/Telegram_logo.webp"
                 alt="Telegram"
                 className="w-6 h-6"
               />
@@ -151,7 +153,7 @@ const MissionSection = () => {
             </button>
             <button className="bg-sky-500 p-3 rounded-full hover:bg-sky-600 transition-colors">
               <img
-                src="/src/assets/images/twitter.png"
+                src="/src/assets/images/twitter.webp"
                 alt="Twitter"
                 className="w-6 h-6"
               />
