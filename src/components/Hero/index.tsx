@@ -1,10 +1,8 @@
-import React from "react";
 
 const HeroSection = () => {
   return (
     <div className="bg-cyan-400 min-h-screen relative overflow-hidden">
-      {/* Top Banner */}
-      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[76%] md:w-[76%] flex justify-between items-center bg-white rounded-full px-6 py-2 shadow-lg">
+      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[76%] md:w-[76%] flex justify-between items-center bg-white rounded-full px-6 py-2 shadow-lg sm:mb-16">
         <div className="flex items-center space-x-2">
           <span className="text-sm md:text-base font-medium flex items-center">
             The
@@ -14,7 +12,7 @@ const HeroSection = () => {
               className="rounded-full ml-2"
             />
           </span>
-          <span className="text-sm md:text-base font-medium">
+          <span className="text-sm md:text-base font-medium sm:text-sm">
             SNUT token is live on KongSwap!
           </span>
         </div>
@@ -23,19 +21,21 @@ const HeroSection = () => {
         </button>
       </div>
 
-      {/* Main Content Container */}
-      <div className="container mx-auto px-6 pt-32 md:pt-36 bg-green-400">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-blue-500">
-          {/* Left Content */}
-          <div className="md:max-w-xl z-10">
+      <div className="container mx-auto px- pt-32 md:pt-36  flex items-center justify-center w-[76%] md:w-[76%] sm:mt-8
+      ">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between  w-full md:w-full ">
+
+          <div className="md:max-w-xl z-10 ">
             {/* DAO Badge */}
-            <div className="inline-flex items-center bg-gray-900 text-white rounded-full px-4 py-2 mb-6 shadow-md">
+            <div className="relative inline-flex items-center bg-gray-900 text-white rounded-md px-8  py-2 mb-6 shadow-md">
               <span className="mr-2 text-sm md:text-base">PostNutDAO</span>
-              <img
+              <div className="absolute  bottom-3 right-0 bg-green-50 rounded-full">
+                <img
                 src="/src/assets/images/peunut.png"
                 alt="dao"
                 className="rounded-full"
-              />
+              /></div>
+              
             </div>
 
             {/* Hero Text */}

@@ -3,45 +3,48 @@
 const MissionSection = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
-      <div className="max-w-6xl mx-auto px-4 py-8 md:py-16">
+      <div className="max-w-6xl mx-auto px-4 py-8 md:py-1">
         {/* Mission Section with Background */}
         <div className="relative max-w-3xl mx-auto text-center mb-16">
-          <div className="absolute inset-0 -z-10">
-            <div className="w-full h-full bg-contain bg-center bg-no-repeat opacity-20">
-              <img
-                src="/src/assets/images/background.png"
-                alt="Background medical professional"
-                className="w-full h-full object-cover rounded-xl"
-              />
+          {/* Background Image */}
+          <div className="relative">
+            <img
+              className="w-full h-auto bg-contain bg-center bg-no-repeat"
+              src="/src/assets/images/background.png"
+              alt="Background"
+            />
+            
+            {/* Content overlaying the bottom half of the image */}
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-cyan-50  to-transparent pt-34 pb-8">
+              <div className="inline-flex items-center bg-[#1a1a1a] text-white rounded-lg px-4 py-2 mb-6">
+                <span className="mr-2 font-medium">PostNutDAO</span>
+                <div className="w-6 h-6 rounded-full overflow-hidden">
+                  <img
+                    src="/src/assets/images/peunut.png"
+                    alt="PostNutDAO Logo"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              <h2 className="text-6xl font-bold mb-6 tracking-tight">OUR MISSION</h2>
+              <p className="text-gray-700 text-lg max-w-2xl mx-auto leading-relaxed">
+                By leveraging blockchain technology PostNutDAO is aiming to educate
+                the masses on mens heath in a easy and accessible way for everyone.
+              </p>
             </div>
           </div>
-
-          <div className="inline-flex items-center bg-gray-900 text-white rounded-lg px-4 py-2 mb-6">
-            <span className="mr-2">PostNutDAO</span>
-            <div className="w-6 h-6 rounded-full overflow-hidden">
-              <img
-                src="/src/assets/images/peunut.png"
-                alt="PostNutDAO Logo"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-
-          <h2 className="text-5xl font-bold mb-6">OUR MISSION</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            By leveraging blockchain technology PostNutDAO is aiming to educate
-            the masses on mens health in a easy and accessible way for everyone.
-          </p>
         </div>
 
+
         {/* Educational Dapp Card - Updated to match new design */}
-        <div className="max-w-4xl mx-auto bg-orange-300 rounded-2xl p-8 mb-16">
+        <div className="max-w-4xl mx-auto bg-[#FFC16D] rounded-2xl p-8 mb-16">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="relative mb-8 md:mb-0 md:w-1/2">
               <img
                 src="/src/assets/images/video.png"
                 alt="Educational elements"
-                className="w-full h-auto"
+                className="relative z-10 max-w-md w-full h-auto"
               />
             </div>
             <div className="md:w-1/2">
@@ -62,7 +65,7 @@ const MissionSection = () => {
         </div>
 
         {/* Launch Info - Updated with new design */}
-        <div className="max-w-4xl mx-auto bg-black text-white rounded-2xl p-8 mb-16">
+        <div className="flex items-center justify-center  max-w-4xl mx-auto bg-black text-white rounded-2xl p-8 mb-16  h-[175px]">
           <div className="flex flex-col space-y-4">
             <div className="flex items-center justify-center gap-3">
               <span className="text-2xl font-serif text-[#FFD700]">
@@ -92,7 +95,7 @@ const MissionSection = () => {
         </div>
 
         {/* Trade Section - Updated with new design */}
-        <div className="max-w-4xl mx-auto bg-cyan-100 rounded-2xl p-8 mb-16 relative">
+        <div className="max-w-4xl mx-auto bg-cyan-100 rounded-2xl p-8 mb-5 relative">
           <div className="flex flex-col items-center text-center relative z-10">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-3xl font-bold">Trade</span>
@@ -121,13 +124,11 @@ const MissionSection = () => {
               </svg>
             </button>
           </div>
-
-          {/* Character illustration */}
-          
         </div>
 
         {/* Community Section - Updated with centered text and image */}
-        <div className="max-w-4xl mx-auto text-center relative mb-16">
+        <div className="flex items-center justify-evenly max-w-4xl mx-auto text-center relative  ">
+          <div>
           <h3 className="text-4xl mb-4">
             Join our
             <br />
@@ -156,9 +157,10 @@ const MissionSection = () => {
               />
             </button>
           </div>
-
+          </div>
+          <div></div>
           {/* Character illustration */}
-          <div className="absolute bottom-0 right-0">
+          <div className="absolute bottom-0 right-0 hidden sm:block">
             <img
               src="/src/assets/images/bigpeaunut.png"
               alt="Character with peanut"
