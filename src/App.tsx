@@ -1,4 +1,3 @@
-
 import MissionSection from "./components/Mission";
 import HeroSection from "./components/Hero";
 function App() {
