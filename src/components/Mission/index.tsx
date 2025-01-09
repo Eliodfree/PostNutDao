@@ -6,11 +6,20 @@ const MissionSection = () => {
         <div className="relative max-w-3xl mx-auto text-center mb-16">
           {/* Background Image */}
 
-          <img
-            className="w-full h-auto bg-contain bg-center bg-no-repeat"
-            src="/images/background.png"
-            alt="Background"
-          />
+          <video
+            className="w-full h-auto object-cover bg-contain bg-center bg-no-repeat opacity-40"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            <source src="/videos/doctor.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+           {/*  illustration */}
+           
+          
+
 
           {/* Content overlaying the image */}
           <div className="flex flex-col items-center justify-center text-center sm:absolute sm:inset-0 sm:justify-end">
@@ -41,20 +50,49 @@ const MissionSection = () => {
             </p>
           </div>
         </div>
-
+        {/*postDao*/}
         <div className="max-w-4xl mx-auto bg-[#FFC16D] rounded-2xl p-8 mb-16">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="relative mb-8 md:mb-0 md:w-1/2 ">
-              <img
-                src="/images/video.png"
-                alt="Educational elements"
-                className="relative z-10 max-w-md w-full h-auto"
-              />
+            <div className="relative mb-8 mx-5 md:mb-0 md:w-1/2">
+              {/* Wrapper div with mask */}
+              <div className="relative">
+                {/* Video element */}
+                <video
+                  className="w-full h-auto object-cover bg-contain bg-center bg-no-repeat opacity-40"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/videos/bag.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                {/* Gradient overlay for fade effect */}
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    background: `
+                  linear-gradient(to right, 
+                    #FFC16D 0%, 
+                    transparent 10%, 
+                    transparent 90%, 
+                    #FFC16D 100%
+                  ),
+                  linear-gradient(to bottom, 
+                    #FFC16D 0%, 
+                    transparent 10%, 
+                    transparent 90%, 
+                    #FFC16D 100%
+                  )
+                `,
+                  }}
+                />
+              </div>
             </div>
             <div className="md:w-1/2">
-              <div className=" relative inline-flex items-center bg-white rounded-lg px-8 py-2 mb-4">
+              <div className="relative inline-flex items-center bg-white rounded-lg px-8 py-2 mb-4">
                 <span className="mr-2">PostNutDAO DAPP</span>
-                <div className="absolute  bottom-3 right-0 rounded-full overflow-hidden ">
+                <div className="absolute bottom-3 right-0 rounded-full overflow-hidden">
                   <img
                     src="/images/peunut.png"
                     alt="PostNutDAO Logo"
@@ -68,8 +106,8 @@ const MissionSection = () => {
               </p>
             </div>
           </div>
-        </div>
-
+        </div>{" "}
+        
         <div className="flex items-center justify-center max-w-4xl mx-auto bg-black text-white rounded-2xl p-8 mb-16 h-auto sm:h-[175px]">
           {/* Small screens: side-by-side layout */}
           <div className="sm:hidden flex flex-col items-center justify-center space-y-4">
@@ -80,10 +118,10 @@ const MissionSection = () => {
                 className="w-8 h-8 rounded-full"
               />
               <div className="text-center">
-                <span className="text-3xl font-serif text-[#FFDBA9] block">
+                <span className="text-3xl font-bold text-[#FFDBA9] block">
                   Launched on
                 </span>
-                <span className="text-2xl text-purple-400 font-serif">
+                <span className="text-3xl text-purple-400 font-serif">
                   PacaPump
                 </span>
               </div>
@@ -96,20 +134,19 @@ const MissionSection = () => {
                 className="w-8 h-8 rounded-full"
               />
               <div className="text-center">
-                <span className="text-2xl font-serif text-white block">
+                <span className="text-3xl  font-bold text-white block">
                   Trade on
                 </span>
-                <span className="text-2xl text-green-400 font-serif">
+                <span className="text-3xl text-green-400 font-serif">
                   KongSwap
                 </span>
               </div>
             </div>
           </div>
 
-         
           <div className="hidden sm:flex flex-col space-y-4">
             <div className="flex items-center justify-center gap-3">
-              <span className="text-3xl font-serif text-[#FFDBA9]">
+              <span className="text-3xl font-bold text-[#FFDBA9]">
                 Launched on
               </span>
               <img
@@ -117,13 +154,13 @@ const MissionSection = () => {
                 alt="PacaPump"
                 className="w-8 h-8 rounded-full"
               />
-              <span className="text-2xl text-purple-400 font-serif">
+              <span className="text-3xl font-bold text-purple-400 font-serif">
                 PacaPump
               </span>
             </div>
             <div className="flex items-center justify-center gap-3">
-              <span className="text-2xl font-serif text-white">Trade on</span>
-              <span className="text-2xl text-green-400 font-serif">
+              <span className="text-3xl font-bold text-white">Trade on</span>
+              <span className="text-3xl font-bold text-green-400 font-serif">
                 KongSwap
               </span>
               <img
@@ -134,7 +171,6 @@ const MissionSection = () => {
             </div>
           </div>
         </div>
-
         <div className="max-w-4xl mx-auto bg-cyan-100 rounded-2xl p-8 mb-5 relative">
           <div className="flex flex-col items-center text-center relative z-10">
             <div className="flex items-center gap-2 mb-4">
@@ -144,31 +180,29 @@ const MissionSection = () => {
             </div>
             <div className="text-3xl font-bold mb-6">KongSwap today</div>
             <div className="relative inline-block">
-      <button className="bg-orange-200 text-gray-800 px-6 py-3 rounded-full inline-flex items-center shadow-lg hover:bg-orange-300 pr-12">
-        Buy Now
-      </button>
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 bg-[#0A3442] rounded-full w-10 h-10 flex items-center justify-center shadow-lg">
-        <div>
-          <svg
-          className="w-5 h-5 text-white"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M9 5l7 7-7 7"
-          />
-        </svg>
-        </div>
-        
-      </div>
-    </div>
+              <button className="bg-orange-200 text-gray-800 px-6 py-3 rounded-full inline-flex items-center shadow-lg hover:bg-orange-300 pr-12">
+                Buy Now
+              </button>
+              <div className="absolute top-1/2 right-0 -translate-y-1/2 bg-[#0A3442] rounded-full w-10 h-10 flex items-center justify-center shadow-lg">
+                <div>
+                  <svg
+                    className="w-5 h-5 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
         <div className="flex items-center justify-evenly max-w-4xl mx-auto text-center relative  ">
           <div>
             <h3 className="text-4xl mb-4">

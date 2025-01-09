@@ -12,7 +12,7 @@ const HeroSection = () => {
             />
           </span>
           <span className="text-sm md:text-sm font-medium sm:text-sm">
-            SNUT token is live on KongSwap!
+          $NUT token is live on KongSwap!
           </span>
         </div>
         <button className="bg-gray-900 text-white px-5 py-2 rounded-full text-sm md:text-base hover:bg-gray-800">
