@@ -1,75 +1,74 @@
 const MissionSection = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white">
-      <div className="max-w-6xl mx-auto px-4 py-8 md:py-12">
-        {/* Mission Section */} 
+    <div className="relative min-h-screen bg-gradient-to-b from-cyan-5 to-white bg-green-40">
+      <div className="max-w-6xl mx-auto px-4 py-8 md:py-12 ">
+        {/* Mission Section */}
         <div className="relative max-w-3xl mx-auto text-center mb-16">
-  {/* Wrapper with mask */}
-      <div className="relative">
-    {/* Video element */}
-    <video
-      className="w-full h-auto object-cover bg-contain bg-center bg-no-repeat opacity-40"
-      autoPlay
-      muted
-      loop
-      playsInline
-    >
-      <source src="/videos/doctor.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+          {/* Wrapper with mask */}
+          <div className="relative">
+            {/* Video element */}
+            <video
+              className="w-full h-auto object-cover bg-contain bg-center bg-no-repeat opacity-40"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/videos/doctor.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
 
-    {/* Gradient overlay for fading effect */}
-    <div
-      className="absolute inset-0 pointer-events-none "
-      style={{
-        background: `
-        linear-gradient(to right, 
-          #ECFEFF 0%, 
-          transparent 10%, 
-          transparent 90%, 
-          #ECFEFF 100%
-        ),
-        linear-gradient(to bottom, 
-          #ECFEFF 0%, 
-          transparent 10%, 
-          transparent 90%, 
-          #ECFEFF 100%
-        )
-      `,
-      }}
-    />
-  </div>
+            {/* Gradient overlay for fading effect */}
+            <div
+              className="absolute inset-0 pointer-events-none"
+              style={{
+                background: `
+          linear-gradient(to right, 
+            #FFFFFF 0%, 
+            transparent 10%, 
+            transparent 90%, 
+            #FFFFFF 100%
+          ),
+          linear-gradient(to bottom, 
+            #FFFFFF 0%, 
+            transparent 10%, 
+            transparent 90%, 
+            #FFFFFF 100%
+          )
+        `,
+              }}
+            />
+          </div>
 
-  {/* Content overlaying the video */}
-  <div className="flex flex-col items-center justify-center text-center sm:absolute sm:inset-0 sm:justify-end">
-    {/* "PostNutDAO" Box */}
-    <div className="relative inline-flex items-center bg-[#1a1a1a] text-white rounded-lg px-6 py-2 mb-4 sm:px-8 sm:py-3">
-      <span className="mr-2 font-medium text-sm sm:text-base md:text-lg px-4">
-        PostNutDAO
-      </span>
-      <div className="absolute bottom-3 right-0 bg-green-50 rounded-full">
-        <img
-          src="/images/peunut.png"
-          alt="dao"
-          className="rounded-full"
-        />
-      </div>
-    </div>
+          {/* Content overlaying the video */}
+          <div className="flex flex-col items-center justify-center text-center sm:absolute sm:inset-0 sm:justify-end">
+            {/* "PostNutDAO" Box */}
+            <div className="relative inline-flex items-center bg-[#1a1a1a] text-white rounded-lg px-6 py-2 mb-4 sm:px-8 sm:py-3">
+              <span className="mr-2 font-medium text-sm sm:text-base md:text-lg px-4">
+                PostNutDAO
+              </span>
+              <div className="absolute bottom-3 right-0 bg-green-50 rounded-full">
+                <img
+                  src="/images/peunut.png"
+                  alt="dao"
+                  className="rounded-full"
+                />
+              </div>
+            </div>
 
-    {/* Heading */}
-    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 tracking-tight">
-      OUR MISSION
-    </h2>
+            {/* Heading */}
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-2 sm:mb-4 tracking-tight">
+              OUR MISSION
+            </h2>
 
-    {/* Subheading */}
-    <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
-      By leveraging blockchain technology, PostNutDAO is aiming to educate the masses on men's health in an easy and accessible way for everyone.
-    </p>
-  </div>
-      </div>
-
-      
-
+            {/* Subheading */}
+            <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+              By leveraging blockchain technology, PostNutDAO is aiming to
+              educate the masses on men's health in an easy and accessible way
+              for everyone.
+            </p>
+          </div>
+        </div>
         {/*postDao*/}
         <div className="max-w-4xl mx-auto bg-[#FFC16D] rounded-2xl p-8 mb-16">
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -127,7 +126,6 @@ const MissionSection = () => {
             </div>
           </div>
         </div>{" "}
-        
         <div className="flex items-center justify-center max-w-4xl mx-auto bg-black text-white rounded-2xl p-8 mb-16 h-auto sm:h-[175px]">
           {/* Small screens: side-by-side layout */}
           <div className="sm:hidden flex flex-col items-center justify-center space-y-4">
@@ -263,8 +261,43 @@ const MissionSection = () => {
               className="w-64 h-auto"
             />
           </div>
+          {/* <div
+            className="absolute top-0 right-0   w-[200px] h-[200px] items-center justify-center text-white block lg:hidden"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(255, 177, 177, 0.5) 0%, transparent 72%)",
+            }}
+          >
+            <p className="text-sm"></p>
+          </div> */}
         </div>
       </div>
+      <div
+        className="absolute bottom-60 right-10 rounded-full w-[300px] h-[300px] flex items-center justify-center text-white hidden lg:block"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(255, 177, 177, 0.1) 0%, transparent 72%)",
+        }}
+      >
+        <p className="text-sm">{/* Your content here */}</p>
+      </div>
+
+      <div
+        className="absolute top-80 left-0 right-0 rounded-full w-[400px] h-[400px] flex items-center justify-center text-white hidden lg:block"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(255, 177, 177, 0.3) 0%, transparent 72%)",
+        }}
+      >
+        <p className="text-sm">{/* Your content here */}</p>
+      </div>
+
+      <div
+        className="absolute bottom-20 left-10 right-0 rounded-full w-[500px] h-[500px] flex items-center justify-center text-white hidden lg:block"
+        style={{
+          background: "radial-gradient(circle, #A5F3FC 0%, transparent 72%)",
+        }}
+      ></div>
     </div>
   );
 };
